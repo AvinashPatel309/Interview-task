@@ -25,8 +25,7 @@ const Profile = () => {
         );
         setUserDetails(response.data);
 
-        // Fetch some products to display as "user's products"
-        // For demo purposes, we'll just fetch 4 random products
+        // Fetch some products for the user
         const productsResponse = await axios.get(
           "https://dummyjson.com/products?limit=4"
         );
